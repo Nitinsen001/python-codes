@@ -511,23 +511,23 @@ It helps with code reuse, reducing duplication, and building hierarchical relati
 
 
 
-class c0:
-    data=900
-class c1(c0):
-    data = 23
-    def m1(self):
-        print("i am m1")
-class c2:
-    data = 34
-    student = "nitin"
-    def m2(self):
-        print("i am m2")
-        super().m1()
-class c3(c2, c1):# ager me c1 ko pehle likhta hu to super class nhi chalega error hoga iss liye c2 ko pehle likha h
-    pass
-obj = c3()
-print(obj.data)  # it will print 23 due to method resolution order
-obj.m2()  # it will print "i am m2" and then "i am m1"
+# class c0:
+#     data=900
+# class c1(c0):
+#     data = 23
+#     def m1(self):
+#         print("i am m1")
+# class c2:
+#     data = 34
+#     student = "nitin"
+#     def m2(self):
+#         print("i am m2")
+#         super().m1()
+# class c3(c2, c1):# ager me c1 ko pehle likhta hu to super class nhi chalega error hoga iss liye c2 ko pehle likha h
+#     pass
+# obj = c3()
+# print(obj.data)  # it will print 23 due to method resolution order
+# obj.m2()  # it will print "i am m2" and then "i am m1"
 
 
 ''' in the casse of constructor we cant use return function kyuki constructor kabhi bhi return hold nhi kerta h wo hamesha object return karta h ''' 
@@ -585,21 +585,21 @@ obj.m2()  # it will print "i am m2" and then "i am m1"
     
 
 
-class c1:
-    def m1(self,a):
-        print(a)
-class c2:
-    def m1(self,a,b):
-        print(a+b)
-def call(class_name,*args):
-    obj = class_name()
-    length = len(args)
-    if length == 1:
-        obj.m1(args[0])
-    elif length == 2:
-        obj.m1(args[0],args[1])
-call(c1,10) # it will print 10
-call(c2,10,20) # it will print 30
+# class c1:
+#     def m1(self,a):
+#         print(a)
+# class c2:
+#     def m1(self,a,b):
+#         print(a+b)
+# def call(class_name,*args):
+#     obj = class_name()
+#     length = len(args)
+#     if length == 1:
+#         obj.m1(args[0])
+#     elif length == 2:
+#         obj.m1(args[0],args[1])
+# call(c1,10) # it will print 10
+# call(c2,10,20) # it will print 30
     
     
     
@@ -631,16 +631,16 @@ call(c2,10,20) # it will print 30
 # print(obj1.__add__(obj2)) # it will print added values are 70 and 90
 
 ''' same for multification operator '''
-class c1:
-    def __init__(self,a,b):
-        self.a=a
-        self.b=b
-    def __mul__(self_o1,self_o2):
-        n1,n2=self_o1.a * self_o2.a, self_o1.b * self_o2.b
-        return f"multified values are {n1} and {n2}"
-        # return n1*n2 # 180 as a result ayega yha kyuki humne dono object ke a and b ko multify kiya h
-obj1=c1(2,3)
-obj2=c1(5,6)
-print(obj1 * obj2) # it will print multified values are 10 and 18
-#  or directally call the method
-print(obj1.__mul__(obj2)) # it will print multified values are 10 and 18
+# class c1:
+#     def __init__(self,a,b):
+#         self.a=a
+#         self.b=b
+#     def __mul__(self_o1,self_o2):
+#         n1,n2=self_o1.a * self_o2.a, self_o1.b * self_o2.b
+#         return f"multified values are {n1} and {n2}"
+#         # return n1*n2 # 180 as a result ayega yha kyuki humne dono object ke a and b ko multify kiya h
+# obj1=c1(2,3)
+# obj2=c1(5,6)
+# print(obj1 * obj2) # it will print multified values are 10 and 18
+# #  or directally call the method
+# print(obj1.__mul__(obj2)) # it will print multified values are 10 and 18

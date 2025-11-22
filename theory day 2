@@ -1,0 +1,45 @@
+
+Common Errors in Python:
+
+1. SyntaxError:
+   - Raised when Python cannot interpret the code because it does not follow correct syntax.
+   - Example: Missing colon, unmatched parentheses.
+
+2. IndentationError:
+   - Occurs when the indentation levels are not consistent.
+   - Example: Mixing tabs and spaces, unexpected indent.
+
+3. NameError:
+   - Raised when a variable or function name is not found.
+   - Example: Using a variable before declaring it.
+
+4. TypeError:
+   - Occurs when an operation is performed on an inappropriate data type.
+   - Example: Adding a string and an integer.
+
+5. ValueError:
+   - Raised when a function receives an argument of correct type but inappropriate value.
+   - Example: Passing a negative value to sqrt().
+
+6. IndexError:
+   - Occurs when trying to access an index that is out of range in a list or tuple.
+   - Example: Accessing list[10] when list has only 5 elements.
+
+7. KeyError:
+   - Raised when trying to access a dictionary key that does not exist.
+   - Example: dict['missing_key']
+
+8. AttributeError:
+   - Occurs when an invalid attribute reference is made.
+   - Example: Calling a method that does not exist for an object.
+
+9. ImportError:
+   - Raised when an imported module cannot be found.
+   - Example: misspelled module name.
+
+10. ZeroDivisionError:
+    - Occurs when dividing a number by zero.
+    - Example: 10 / 0
+
+
+
