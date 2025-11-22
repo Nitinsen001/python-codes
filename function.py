@@ -723,3 +723,6 @@ n = "ABC890hdd4iw"
 # print(''.join(l)[::-1])  
 
 print(int(''.join(reversed([ch for ch in n if ch.isdigit()]))))
+
+''' new addition switched branch'''
+print("hi")
